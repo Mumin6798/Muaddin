@@ -88,7 +88,7 @@ int Athan::getSunrise(){
 int Athan::getFajr(ExtremeDayMethods ExtremeMethod, double FajrAngle){
     //Returns Fajr in seconds form 00:00.
 	double a = getHourAngle(FajrAngle);
-	double fajr;
+	double fajr = 0.0;
 	//Checks the smaller time between the method and the extreme method.
     switch(ExtremeMethod){
         case One_Seventh_Night:
